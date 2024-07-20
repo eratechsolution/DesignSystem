@@ -1,0 +1,113 @@
+.spinner {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.spinner .spinner-circle {
+    -moz-animation: rotation 1s infinite linear;
+    -o-animation: rotation 1s infinite linear;
+    -webkit-animation: rotation 0.75s linear infinite;
+    animation: rotation 0.75s linear infinite;
+    border-radius: 50%;
+    border-left: 0.2rem solid #a3a3a3;
+    border-width: 0.2rem;
+    border-style: solid;
+}
+
+label.spinner-label {
+    color: #6a6a6a;
+}
+
+
+.spinner-large .spinner-circle {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.spinner-medium .spinner-circle {
+    width: 2rem;
+    height: 2rem;
+}
+
+.spinner-small .spinner-circle {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+label.spinner-label {
+    font-size: 1.4rem;
+    color: #6a6a6a;
+}
+
+
+.spinner-small .spinner-label {
+    font-size: 1.2rem;
+}
+
+.spinner-medium .spinner-label {
+    font-size: 1.3rem;
+}
+
+
+
+.spinner.spinner-small .spinner-circle {
+    border-width: 0.1rem;
+}
+
+
+.spinner-positive .spinner-circle {
+    border-color: var(--jiffyui-Possitive-800);
+    border-left-color: var(--jiffyui-Possitive-600);
+}
+
+.spinner-negative .spinner-circle {
+    border-color: var(--jiffyui-Negative-800);
+    border-left-color: var(--jiffyui-Negative-400);
+}
+
+.spinner-notice .spinner-circle {
+    border-color: var(--jiffyui-Notice-800);
+    border-left-color: var(--jiffyui-Notice-400);
+}
+
+.spinner-info .spinner-circle {
+    border-color: var(--jiffyui-Sapphire-800);
+    border-left-color: var(--jiffyui-Sapphire-500);
+}
+
+.spinner-neutral .spinner-circle {
+    border-color: var(--jiffyui-Cloud-800);
+    border-left-color: var(--jiffyui-Cloud-400);
+}
+
+.spinner-primary .spinner-circle {
+    border-color: var(--jiffyui-Cerulean-800);
+    border-left-color: var(--jiffyui-Cerulean-500);
+}
+
+.spinner.spinner-labelRight {
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+
+@keyframes rotation {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotation {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotation {
+    to {
+        transform: rotate(360deg);
+    }
+}

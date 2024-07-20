@@ -1,0 +1,45 @@
+.thumbnail {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+}
+.thumbnail-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.thumbnail--extraSmall {
+    height: 32px;
+    width: 32px;
+}
+.thumbnail--small {
+    width: 40px;
+    height: 40px;
+}
+.thumbnail--medium {
+    width: 50px;
+    height: 50px;
+}
+.thumbnail--large {
+    width: 60px;
+    height: 60px;
+}
+.thumbnail--cover .thumbnail-img {
+    object-fit: cover;
+}
+.thumbnail--contain .thumbnail-img {
+    object-fit: contain;
+}
+.thumbnail--fill .thumbnail-img {
+    object-fit: fill;
+}
+.thumbnail-click {
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.thumbnail-click:hover{
+    opacity: 0.7;
+    transform: scale(1.05);
+}

@@ -1,0 +1,261 @@
+:root {
+  font-size: 62.5%;
+  --jiffyui-primary-color: #305EFF;
+  --jiffyui-secondary-color: #5c6f7c;
+  --jiffyui-tertiary-color: #6C849D1F;
+  --jiffyui-tertiary-hover-color: #6C849D2E;
+  --jiffyui-default-body-color: #3f5360;
+  --jiffyui--success-color: #029564;
+  --jiffyui--success-hover-color: #03573b;
+  --jiffyui--negative-color: #D92D20;
+  --jiffyui--negative-hover-color: #97160c;
+  --jiffyui--warning-hover-color: #a74c0b;
+  --jiffyui--warning-color: #E9690C;
+  --jiffyui-link-color: #2950DA;
+  --jiffyui-link-hover-color: #305EFF;
+  --jiffyui-possitive-color: #00A251;
+  --jiffyui-primary-hover-color: #1d1b1b;
+
+  --jiffyui-Cerulean-050: #F5F8FF;
+  --jiffyui-Cerulean-100: #D8E4FD;
+  --jiffyui-Cerulean-200: #B4CDFD;
+  --jiffyui-Cerulean-300: #75A3FF;
+  --jiffyui-Cerulean-400: #4D7FFF;
+  --jiffyui-Cerulean-500: #305EFF;
+  --jiffyui-Cerulean-600: #2950DA;
+  --jiffyui-Cerulean-700: #2243B6;
+  --jiffyui-Cerulean-800: #1B3591;
+  --jiffyui-Cerulean-900: #14286D;
+  --jiffyui-Cerulean-1000: #0D1A48;
+
+  --jiffyui-Possitive-050: #EBFAF3;
+  --jiffyui-Possitive-100: #DAF5E8;
+  --jiffyui-Possitive-200: #B6ECD1;
+  --jiffyui-Possitive-300: #91E3BA;
+  --jiffyui-Possitive-400: #48D08C;
+  --jiffyui-Possitive-500: #00BE5F;
+  --jiffyui-Possitive-600: #00A251;
+  --jiffyui-Possitive-700: #008743;
+  --jiffyui-Possitive-800: #006C36;
+  --jiffyui-Possitive-900: #005128;
+  --jiffyui-Possitive-1000: #00361B;
+
+  --jiffyui-Negative-050: #FFF5F5;
+  --jiffyui-Negative-100: #FEE4E2;
+  --jiffyui-Negative-200: #FEC6C3;
+  --jiffyui-Negative-300: #FD9D96;
+  --jiffyui-Negative-400: #F96C62;
+  --jiffyui-Negative-500: #F04438;
+  --jiffyui-Negative-600: #D92D20;
+  --jiffyui-Negative-700: #B42318;
+  --jiffyui-Negative-800: #9A0E0E;
+  --jiffyui-Negative-900: #880C0C;
+  --jiffyui-Negative-1000: #750A0A;
+
+  --jiffyui-Notice-050: #FFF3EB;
+  --jiffyui-Notice-100: #FFE1CC;
+  --jiffyui-Notice-200: #FFC499;
+  --jiffyui-Notice-300: #FFAC70;
+  --jiffyui-Notice-400: #FF9040;
+  --jiffyui-Notice-500: #FF7A1A;
+  --jiffyui-Notice-600: #E9690C;
+  --jiffyui-Notice-700: #C65C10;
+  --jiffyui-Notice-800: #A24D10;
+  --jiffyui-Notice-900: #813E0E;
+  --jiffyui-Notice-1000: #5D2C09;
+
+  --jiffyui-Sapphire-050: #E7F6FE;
+  --jiffyui-Sapphire-100: #CFEDFC;
+  --jiffyui-Sapphire-200: #A8DFFA;
+  --jiffyui-Sapphire-300: #79CEF8;
+  --jiffyui-Sapphire-400: #57C1F6;
+  --jiffyui-Sapphire-500: #15B0F3;
+  --jiffyui-Sapphire-600: #1291D0;
+  --jiffyui-Sapphire-700: #0F78AD;
+  --jiffyui-Sapphire-800: #0C608A;
+  --jiffyui-Sapphire-900: #094868;
+  --jiffyui-Sapphire-1000: #063145;
+
+  --jiffyui-Cloud-050: #EDF4F7;
+  --jiffyui-Cloud-100: #E6EFF4;
+  --jiffyui-Cloud-200: #CBDDE6;
+  --jiffyui-Cloud-300: #97BBCD;
+  --jiffyui-Cloud-400: #6091A9;
+  --jiffyui-Cloud-500: #387594;
+  --jiffyui-Cloud-600: #1F5C7A;
+  --jiffyui-Cloud-700: #1D4B63;
+  --jiffyui-Cloud-800: #143D52;
+  --jiffyui-Cloud-900: #032A3E;
+  --jiffyui-Cloud-1000: #021C29;
+
+  --jiffyui-Sea-050: #EDF7F7;
+  --jiffyui-Sea-100: #E2F3F3;
+  --jiffyui-Sea-200: #C2E0E0;
+  --jiffyui-Sea-300: #97CDCD;
+  --jiffyui-Sea-400: #60A9A9;
+  --jiffyui-Sea-500: #389494;
+  --jiffyui-Sea-600: #1F7A7A;
+  --jiffyui-Sea-700: #1D6363;
+  --jiffyui-Sea-800: #145252;
+  --jiffyui-Sea-900: #033E3E;
+  --jiffyui-Sea-1000: #022929;
+
+  --jiffyui-Forest-050: #EBFAF3;
+  --jiffyui-Forest-100: #DAF5E8;
+  --jiffyui-Forest-200: #B6ECD1;
+  --jiffyui-Forest-300: #91E3BA;
+  --jiffyui-Forest-400: #48D08C;
+  --jiffyui-Forest-500: #00BE6F;
+  --jiffyui-Forest-600: #009E5C;
+  --jiffyui-Forest-700: #00874F;
+  --jiffyui-Forest-800: #006C3F;
+  --jiffyui-Forest-900: #00512F;
+  --jiffyui-Forest-1000: #003821;
+
+  --jiffyui-naturalLight-000: #FFFFFF;
+  --jiffyui-naturalLight-050: #F8FAFC;
+  --jiffyui-naturalLight-100: #F1F5FA;
+  --jiffyui-naturalLight-200: #E3EAF3;
+  --jiffyui-naturalLight-300: #CBD5E2;
+  --jiffyui-naturalLight-400: #B1C1D2;
+  --jiffyui-naturalLight-500: #90A5BB;
+  --jiffyui-naturalLight-600: #768EA7;
+  --jiffyui-naturalLight-700: #6C849D;
+
+  --jiffyui-naturalDark-800: #58728D;
+  --jiffyui-naturalDark-900: #40566D;
+  --jiffyui-naturalDark-1000: #2F4256;
+  --jiffyui-naturalDark-1100: #243547;
+  --jiffyui-naturalDark-1200: #192839;
+  --jiffyui-naturalDark-1300: #0C1927;
+
+  --jiffyui-black: #000000;
+  --jiffyui-white: #ffffff;
+
+  --jiffyui-low-elevation: 0rem 0.2rem 0.5rem 0rem rgba(25, 40, 57, 0.1);
+  --jiffyui-mid-elevation: 0rem 0.8rem 2.4rem 0rem rgba(25, 40, 57, 0.12);
+  --jiffyui-high-elevation: 0rem 1.6rem 4.8rem -0.4rem rgba(25, 40, 57, 0.18);
+
+  --jiffyui-borderRadius-none: 0rem;
+  --jiffyui-borderRadius-xsmall: 0.1rem;
+  --jiffyui-borderRadius-small: 0.2rem;
+  --jiffyui-borderRadius-medium: 0.4rem;
+  --jiffyui-borderRadius-large: 0.8rem;
+  --jiffyui-borderRadius-xlarge: 1.2rem;
+  --jiffyui-borderRadius-2xlarge: 1.6rem;
+  --jiffyui-borderRadius-max: 100rem;
+
+  --jiffyui-borderWidth-none: 0rem;
+  --jiffyui-borderWidth-thinner: 0.05rem;
+  --jiffyui-borderWidth-thin: 0.1rem;
+  --jiffyui-borderWidth-thick: .15rem;
+  --jiffyui-borderWidth-thicker: 0.2rem;
+
+  --jiffyui-light-font: roboto-light;
+  --jiffyui-regular-font: roboto-regular;
+  --jiffyui-medium-font: roboto-Medium;
+  --jiffyui-bold-font: roboto-bold;
+}
+
+@font-face {
+  font-family: "roboto-light";
+  src: url("./assets/fonts/Roboto-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "roboto-regular";
+  src: url("./assets/fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "roboto-Medium";
+  src: url("./assets/fonts/Roboto-Medium.ttf");
+  font-style: normal;
+  font-display: swap;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "roboto-bold";
+  src: url("./assets/fonts/Roboto-Bold.ttf");
+  font-style: normal;
+  font-display: swap;
+  font-weight: normal;
+}
+
+body,
+p {
+  font-family: roboto-regular;
+  font-size: 1.4rem;
+  color: var(--creattive-default-body-color);
+  line-height: 2.1rem;
+}
+
+body {
+  padding: 0 !important;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  -webkit-box-shadow: inset 0 0 0 #f1f1f1;
+  box-shadow: inset 0 0 0 #f1f1f1;
+  border-radius: var(--radius-rounded-5);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c7c7c7;
+  border-radius: var(--radius-rounded-5);
+  -webkit-box-shadow: inset 0 0 0 #c7c7c7;
+  box-shadow: inset 0 0 0 #c7c7c7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #adadad;
+  -webkit-box-shadow: inset 0 0 6px #adadad;
+  box-shadow: inset 0 0 6px #adadad;
+}

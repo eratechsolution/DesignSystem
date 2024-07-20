@@ -1,0 +1,191 @@
+.stepWizard {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.stepWizard__step {
+  text-align: center;
+  position: relative;
+}
+
+.stepWizard__icon {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 0px auto;
+  background: #e4e4e4;
+  border-radius: 100%;
+  text-align: center;
+  padding: 3px;
+  position: relative;
+  z-index: 1;
+  line-height: 18px;
+  color: #333;
+}
+
+.stepWizard__icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.stepWizard__step::after,
+.stepWizard__step::before {
+  content: '';
+  width: calc(50% - 17px);
+  height: 1.5px;
+  background: #d3d3d3;
+  position: absolute;
+  top: 11px;
+}
+
+.stepWizard__step::before {
+  left: 0;
+}
+
+.stepWizard__step::after {
+  right: 0;
+}
+
+.stepWizard .stepWizard__step:first-child::before,
+.stepWizard .stepWizard__step:last-child::after {
+  display: none;
+}
+
+.stepWizard__step--process .stepWizard__icon,
+.stepWizard--mobile .stepWizard__icon {
+  background: #f9e7c5;
+  color: #bb8728;
+}
+
+.stepWizard__step--process .stepWizard__icon svg,
+.stepWizard--mobile .stepWizard__icon svg {
+  color: #bb8728;
+}
+
+.stepWizard__step--finish .stepWizard__icon,
+.stepWizard--mobile .stepWizard__icon.stepWizard__icon--finish  {
+  background: #b7f7dc;
+  color: #1b875a;
+}
+
+.stepWizard__step--finish .stepWizard__icon svg {
+  color: #1b875a;
+}
+
+li.stepWizard__step.stepWizard__step--finish::after {
+  background: linear-gradient(90deg, #1b875a 67%, #d3b52a 100%);
+}
+
+li.stepWizard__step.stepWizard__step--process::before {
+  background: linear-gradient(90deg, #d3b52a 38%, #edb03f 100%);
+}
+
+li.stepWizard__step.stepWizard__step--finish::before {
+  background: linear-gradient(90deg, #d3b52a 0%, #1b875a 34%);
+}
+
+.stepWizard__body .stepWizard__label {
+  color: #333;
+  display: block;
+  margin-top: 5px;
+  font-family: 'roboto-Medium';
+  line-height: 20px;
+}
+
+p.stepWizard__description {
+  font-size: 1.2rem;
+  color: #655c5c;
+}
+
+/* mobile */
+.stepWizard--mobile .stepWizard__activeStep {
+  margin-bottom: 8px;
+}
+
+ul.stepWizard--mobile__lineList {
+  display: flex;
+  height: 5px;
+  gap: 2px;
+}
+
+.stepWizard--mobile__line {
+  width: 100%;
+  height: 5px;
+  background: #a99e9e;
+  border-radius: 4px;
+}
+
+li.stepWizard--mobile__line.stepWizard--mobile__line--finish {
+  background: #1b875a;
+}
+
+li.stepWizard--mobile__line.stepWizard--mobile__line--process {
+  background: #edb03f;
+}
+
+.stepWizard__activeStep {
+  display: flex;
+  align-items: start;
+  gap: 0.8rem;
+}
+
+.stepWizard--mobile .stepWizard__icon {
+  display: inline-block;
+  margin: unset;
+  width: 24px;
+  height: 24px;
+}
+
+.stepWizard--mobile label.stepWizard__label {
+  margin-top: 0;
+}
+
+/* vertical */
+.stepWizard.stepWizard--vertical {
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+}
+
+.stepWizard--vertical .stepWizard__step {
+  text-align: left;
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  align-items: start;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.stepWizard--vertical .stepWizard__icon {
+  margin: unset;
+}
+
+.stepWizard--vertical .stepWizard__body .stepWizard__label {
+  margin-top: 0;
+}
+
+.stepWizard--vertical .stepWizard__step::after,
+.stepWizard--vertical .stepWizard__step::before {
+  width: 1.5px;
+  height: calc(50% - 5px);
+  left: 11px;
+  top: unset;
+  bottom: 0;
+}
+
+.stepWizard--vertical .stepWizard__step::before {
+  top: 0;
+  height: calc(50% - 25px);
+}
+
+.stepWizard--vertical li.stepWizard__step.stepWizard__step--finish::after {
+  background: linear-gradient(180deg, #1b875a 67%, #d3b52a 100%);
+}
+
+.stepWizard--vertical li.stepWizard__step.stepWizard__step--finish::before {
+  background: linear-gradient(180deg, #d3b52a 0%, #1b875a 34%);
+}

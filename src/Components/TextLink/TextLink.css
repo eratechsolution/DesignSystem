@@ -1,0 +1,131 @@
+.pixel-textLink {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.pixel-textLink__label {
+    font-size: 1.4rem;
+    transition: 0.3s all;
+    color: var(--jiffyui-link-color);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem
+}
+
+.pixel-textLink__label svg {
+    min-width: 16px;
+    display: inline-block;
+    vertical-align: baseline;
+    align-items: center;
+}
+
+.pixel-textLink__label:hover {
+    color: var(--jiffyui-link-hover-color);
+    text-decoration: underline;
+}
+
+.pixel-textLink__label:active {
+    color: var(--jiffyui-link-hover-color) !important;
+    text-decoration: underline;
+}
+
+/* Danger TextLink */
+.pixel-textLink--negative .pixel-textLink__label {
+    color: var(--jiffyui--negative-color);
+    text-decoration: underline;
+}
+
+.pixel-textLink--negative .pixel-textLink__label:hover {
+    color: var(--jiffyui--negative-hover-color);
+    text-decoration: unset;
+}
+
+.pixel-textLink--negative .pixel-textLink__label:active {
+    color: var(--jiffyui--negative-hover-color) !important;
+    text-decoration: unset;
+}
+
+.pixel--textLink--disabled.pixel-textLink--negative .pixel-textLink__label,
+.pixel--textLink--disabled.pixel-textLink--negative .pixel-textLink__label:hover,
+.pixel--textLink--disabled.pixel-textLink--negative .pixel-textLink__label:active {
+    color: var(--jiffyui--negative-hover-color) !important;
+    text-decoration: unset;
+    opacity: 0.4;
+}
+
+/* Danger TextLink End */
+/* Warning TextLink */
+.pixel-textLink--waiting .pixel-textLink__label {
+    color: var(--jiffyui--warning-color);
+    text-decoration: underline;
+}
+
+.pixel-textLink--waiting .pixel-textLink__label:hover {
+    color: var(--jiffyui--warning-hover-color);
+    text-decoration: unset;
+}
+
+.pixel-textLink--waiting .pixel-textLink__label:active {
+    color: var(--jiffyui--warning-hover-color) !important;
+    text-decoration: unset;
+}
+
+.pixel--textLink--disabled.pixel-textLink--waiting .pixel-textLink__label,
+.pixel--textLink--disabled.pixel-textLink--waiting .pixel-textLink__label:hover,
+.pixel--textLink--disabled.pixel-textLink--waiting .pixel-textLink__label:active {
+    color: var(--jiffyui--warning-hover-color) !important;
+    text-decoration: unset;
+}
+
+
+
+/* Warning TextLink End */
+
+
+/* Successs */
+/* Warning TextLink */
+.pixel-textLink--possitive .pixel-textLink__label {
+    color: var(--jiffyui--success-color);
+    text-decoration: underline;
+}
+
+.pixel-textLink--possitive .pixel-textLink__label:hover {
+    color: var(--jiffyui--success-hover-color);
+    text-decoration: unset;
+}
+
+.pixel-textLink--possitive .pixel-textLink__label:active {
+    color: var(--jiffyui--success-hover-color) !important;
+    text-decoration: unset;
+}
+
+.pixel--textLink--disabled.pixel-textLink--possitive .pixel-textLink__label,
+.pixel--textLink--disabled.pixel-textLink--possitive .pixel-textLink__label:hover,
+.pixel--textLink--disabled.pixel-textLink--possitive .pixel-textLink__label:active {
+    color: var(--jiffyui--success-hover-color) !important;
+    text-decoration: unset;
+    opacity: 0.4;
+}
+
+.pixel--textLink--disabled .pixel-textLink__label,
+.pixel--textLink--disabled .pixel-textLink__label:hover,
+.pixel--textLink--disabled .pixel-textLink__label:active {
+    text-decoration: none;
+    color: var(--jiffyui--success-hover-color) !important;
+    opacity: 0.4;
+}
+
+.pixel-textLink.pixel--textLink--disabled {
+    position: relative
+}
+
+.pixel-textLink.pixel--textLink--disabled::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    cursor: not-allowed;
+}
