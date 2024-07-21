@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import Toast from "../../Components/Toast/component/Toast";
+// import Toast from "../../components/Toast/component/Toast";
 interface AppContextI {
   sideBar: [boolean, (value: boolean) => void];
   toast: {
@@ -51,7 +51,10 @@ const AppProvider = ({ children }: AppProviderI) => {
       }}
     >
       {children}
-      {toastItems.length !== 0 && <Toast />}
+      {toastItems.length !== 0 && 
+        // <Toast />
+        <></>
+      }
     </AppContext.Provider>
   );
 };

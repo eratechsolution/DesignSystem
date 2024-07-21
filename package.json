@@ -1,7 +1,69 @@
 {
-  "name": "package",
-  "version": "0.1.0",
-  "private": true,
+  "name": "jiffy-beta",
+  "version": "1.0.0",
+  "description": "jiffy-beta",
+  "Keywords": "Design system components",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "stroybook",
+    "react",
+    "typescript"
+  ],
+  "author": "Arvinda kumar",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.5",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-typescript": "^11.1.1",
+    "@storybook/addon-actions": "^7.0.11",
+    "@storybook/addon-styling": "^1.0.8",
+    "@storybook/addon-essentials": "^8.1.9",
+    "@storybook/addon-links": "^7.0.11",
+    "@storybook/addon-interactions": "^8.1.9",
+    "@storybook/addon-onboarding": "^8.1.9",
+    "@storybook/blocks": "^8.1.9",
+    "@storybook/preset-create-react-app": "^8.1.9",
+    "@storybook/react": "^8.1.9",
+    "@storybook/react-webpack5": "^8.1.9",
+    "@storybook/test": "^8.1.9",
+    "@types/react": "^18.0.27",
+    "postcss": "^8.4.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.21.6",
+    "rollup-plugin-dts": "^5.3.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "typescript": "^5.0.4",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+   
+    "@chromatic-com/storybook": "^1.5.0",
+    "@storybook/addon-docs": "^8.1.8",
+    
+    "babel-loader": "^9.1.3",
+    "chromatic": "^11.3.0",
+    "css-loader": "^6.10.0",
+    "eslint-plugin-storybook": "^0.8.0",
+    "prop-types": "^15.8.1",
+    "sass": "^1.77.8",
+    "storybook": "^8.1.9",
+    "style-loader": "^3.3.4",
+    "styled-components": "^6.1.8",
+    "webpack": "^5.92.0",
+    "webpack-cli": "^5.1.4"
+  },
   "dependencies": {
     "@storybook/addon-contexts": "^5.3.21",
     "@storybook/addon-storysource": "^8.0.9",
@@ -18,16 +80,11 @@
     "react-feather": "^2.0.10",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "classnames": "^2.3.2"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
-  },
+  
+ 
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -47,30 +104,9 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.18.6",
-    "@babel/preset-react": "^7.23.3",
-    "@chromatic-com/storybook": "^1.5.0",
-    "@storybook/addon-docs": "^8.1.8",
-    "@storybook/addon-essentials": "^8.1.9",
-    "@storybook/addon-interactions": "^8.1.9",
-    "@storybook/addon-links": "^8.1.9",
-    "@storybook/addon-onboarding": "^8.1.9",
-    "@storybook/blocks": "^8.1.9",
-    "@storybook/preset-create-react-app": "^8.1.9",
-    "@storybook/react": "^8.1.9",
-    "@storybook/react-webpack5": "^8.1.9",
-    "@storybook/test": "^8.1.9",
-    "babel-loader": "^9.1.3",
-    "chromatic": "^11.3.0",
-    "css-loader": "^6.10.0",
-    "eslint-plugin-storybook": "^0.8.0",
-    "prop-types": "^15.8.1",
-    "sass": "^1.77.8",
-    "storybook": "^8.1.9",
-    "style-loader": "^3.3.4",
-    "styled-components": "^6.1.8",
-    "webpack": "^5.92.0",
-    "webpack-cli": "^5.1.4"
+  
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
